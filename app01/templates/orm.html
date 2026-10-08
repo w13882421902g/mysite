@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>ORM部门列表</title>
+</head>
+<body>
+    <h1>部门信息</h1>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <th>部门名称</th>
+        </tr>
+        {% for item in dept_list %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.title }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

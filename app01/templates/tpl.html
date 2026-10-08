@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>模板语法的学习</h1>
+<div>{{ n1 }}</div>
+<div>{{ n2 }}</div>
+
+<div>{{ n2.0 }}</div>
+<div>{{ n2.1 }}</div>
+<div>{{ n2.2 }}</div>
+<div>
+    {% for item in n2 %}
+        <span>{{ item }} </span>
+    {% endfor %}
+</div>
+<hr/>
+
+<p>n3完整字典：{{ n3 }}</p>
+<p>姓名：{{ n3.name }}</p>
+<p>薪资：{{ n3.salary }}</p>
+<p>岗位：{{ n3.role }}</p>
+
+<h3>员工列表 n4：</h3>
+<ul>
+    {% for emp in n4 %}
+        <li>姓名：{{ emp.name }}，薪资：{{ emp.salary }}，岗位：{{ emp.role }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
